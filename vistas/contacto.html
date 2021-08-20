@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+    <header>
+        <h1>MINOU.MINOU</h1> <!-- Logo -->
+        <nav>
+            <ol>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="productos.html">PRODUCTOS</a>
+                    <ul>
+                        <li>Cocina</li>
+                        <li>Living</li>
+                        <li>Mascotas</li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="carrito-de-compras.html"> <img src="../imagenes/carrito-compras.png" alt="mi carrito"></a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <p>Quieres hacernos una consulta? Envíala por el siguiente formulario</p>
+        <form action="#" method="#">
+            <label for="info-personal">Nombre y Apellido</label>
+            <input type="text" name="info-personal" placeholder="Nombre y Apellido">
+            <br><br>
+            <label for="email">Correo Electrónico</label>
+            <input type="text" name="email" placeholder="Correo Electrónico">
+            <br><br>
+            <label for="consulta">Consulta</label>
+            <select name="consulta" id="consulta">
+                <option value="Elija una opción">Elija una opción</option>
+                <option value="Medidas">Medidas</option>
+                <option value="Envíos">Envíos</option>
+                <option value="Pago">Pago</option>
+                <option value="Compra">Compra</option>
+            </select>
+            <br><br>
+            <label for="Newsletter">Desea recibir las novedades?</label>
+            <input type="checkbox" name="Newsletter" id="Newsletter">
+            <br><br>
+            <input type="reset" value="Limpiar formulario">
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <h4>Donde estamos?</h4>
+        <h5>Av. Martín García 200, Barracas, CABA</h5>
+        <h2><strong>Hacemos de tu casa, un Hogar</strong></h2>
+        <h4><img src="../imagenes/logo-instagram.png" alt="instagram"></h4> 
+        <h4><img src="../imagenes/sobre.png" alt="contacto"></h4>
+    </footer>
+</body>
+</html>
