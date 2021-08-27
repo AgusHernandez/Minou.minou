@@ -12,32 +12,35 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
+    position: relative;
 }
 
 header {
     background-color: #E2D8CE;
 }
 
+/* Formato del Logo*/
 header h1 {
     color: black;
     font-weight: 400;
     font-size: 3rem;
 }
 
-
+/* Formato del menu*/
 .menu {
     color: black;
     display: inline-block;
 }
 
 a {
-    list-style: none;
+    list-style-type: none;
     text-decoration: none;
     color: black;
     font-weight: 400;
     font-size: 1.5rem;
 }
 
+/* Formato para títulos*/
 .titulos {
     color: black;
     text-align: center;
@@ -45,19 +48,46 @@ a {
     font-size: 3rem;
 }
 
+/* Formato para todos los productos de la página */
 .producto {
-    border-radius: 3%;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .imagenProducto {
     width: 292px;
     height: 304px;
+    border-radius: 11px;
 }
 
-p {
-    color: rosybrown;
+
+/* Formato para sección información importante del index*/
+
+.infoUtil {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
+.imagenInfoUtil {
+    width: 70px;
+    height: 50px;
+}
+
+/* Formato para sección "Nosotros" */
+
+video {
+    width: 50%;
+    height: 50%;
+}
+
+/* Formato para sección carrito*/
+
+#alinear {
+    text-align: center;
+    line-height: 1;
+}
+
+/* Formato para pie de pagina*/
 footer {
     background-color: #E2D8CE;
     position: relative;
@@ -75,7 +105,7 @@ footer {
 }
 
 .leyenda {
-    font-weight: 100;
+    font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
     display: block;
@@ -90,4 +120,30 @@ footer {
     position: relative;
     left: 90%;
     bottom: 30px;
+}
+
+/*para todos los botones de la página*/
+.boton {
+    background-color: #CDA292;
+    border-radius: 44px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Formato para parrafos */
+
+.parrafo {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Formato para formularios*/
+
+.form {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.4;
+    text-align: center;
 }

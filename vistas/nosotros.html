@@ -8,35 +8,44 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="menu">
+    <header>
         <h1>MINOU.MINOU</h1> <!-- Logo -->
         <nav>
-            <ol>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="productos.html">PRODUCTOS</a>
+            <ul>
+                <li class="menu"><a href="../index.html">INICIO</a></li>
+                <li class="menu"><a href="../vistas/productos.html">PRODUCTOS</a>
+                   <!-- <ul>
+                        <li><a href="">Cocina</a></li>
+                        <li><a href="">Living</a></li>
+                        <li><a href="">Mascotas</a></li>
+                    </ul> Se va a usar a partir del desafío 5-->
                 </li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="carrito-de-compras.html"> <img src="../assets/carrito-compras.png" alt="mi carrito"></a></li>
-            </ol>
+                <li class="menu"><a href="../vistas/nosotros.html">NOSOTROS</a></li>
+                <li class="menu"><a href="../vistas/contacto.html">CONTACTO</a></li>
+                <li class="menu"><a href="../vistas/carritoDeCompras.html"> <img src="../assets/carritoCompras.png" alt="Carrito de  Compras"> </a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <h2 class="titulos">Quienes somos?</h2>
         <br><br>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur aut, quasi autem nisi consequuntur fuga quidem harum ullam repudiandae voluptates possimus cum placeat laboriosam accusantium nesciunt cumque perspiciatis architecto officia?</p>
-        <br><br>
         <video src="../assets/videoEquipo.mp4" controls></video>
+        <br><br>
+        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam libero, culpa voluptas minima enim accusantium. Cupiditate, officiis iste voluptas, minus sequi accusantium velit laborum corrupti quae distinctio sunt, mollitia et! <br><br>
+        Quidem, harum laborum magni tempore consectetur quod quia iste sunt eaque neque, eveniet deserunt non laudantium, est quam cupiditate vel exercitationem assumenda earum aliquam doloribus velit ullam temporibus accusantium! Itaque. <br><br>
+        Labore distinctio autem aliquid consectetur. Sunt quos nesciunt dicta laudantium, asperiores atque tenetur nulla quis tempora ipsum. Quia, inventore voluptatum neque exercitationem non perspiciatis quos atque, ab maiores earum eaque!</p>
         <br><br>
     </main>
     <footer>
-        <h4>Donde estamos?</h4>
-        <h5>Av. Martín García 200, Barracas, CABA</h5>
-        <br><br>
-        <h2><strong>Hacemos de tu casa, un Hogar</strong></h2>
-        <br><br>
-        <h4><img src="../assets/logo-instagram.png" alt="instagram"></h4> 
-        <h4><img src="../assets/sobre.png" alt="contacto"></h4>
+        <div class="direccion">
+            <h4>Donde estamos?</h4>
+            <h5>Av. Martín García 200, Barracas, CABA</h5>
+        </div>
+        <div class="leyenda">
+            <h2><strong>Hacemos de tu casa, <br> un Hogar</strong></h2>
+        </div>
+        <li class="redSocial"><img src="../assets/logoInstagram.png" alt="Instagram"></li> 
+        <li class="redSocial"><a href="../vistas/contacto.html"><img src="../assets/sobre.png" alt="Contacto"></a></li>
     </footer>
 </body>
 </html>
