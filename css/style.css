@@ -1,34 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.menu {
-    color: black;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
     background-color: #E2D8CE;
 }
 
+header h1 {
+    color: black;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+
+.menu {
+    color: black;
+    display: inline-block;
+}
+
 a {
+    list-style: none;
     text-decoration: none;
-    color: rgb(224, 155, 64);
+    color: black;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 .titulos {
-    color: #CDA292;
+    color: black;
     text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
-.titulosTabla {
-    color: rgb(156, 111, 111);
+.producto {
+    border-radius: 3%;
 }
 
 .imagenProducto {
     width: 292px;
     height: 304px;
-    border-radius: 11px;
-
 }
 
 p {
     color: rosybrown;
+}
+
+footer {
+    background-color: #E2D8CE;
+    position: relative;
+    width: 100%;
+}
+
+.direccion {
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin: 5px;
+}
+
+.leyenda {
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 25px;
+}
+
+.redSocial {
+    font-weight: 100;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+    left: 90%;
+    bottom: 30px;
 }
