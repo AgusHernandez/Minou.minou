@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Carrito de Compras</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -27,14 +27,35 @@
         </nav>
     </header>
     <main>
-        <h2 class="titulos">Quienes somos?</h2>
-        <br><br>
-        <video src="../assets/videoEquipo.mp4" controls></video>
-        <br><br>
-        <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam libero, culpa voluptas minima enim accusantium. Cupiditate, officiis iste voluptas, minus sequi accusantium velit laborum corrupti quae distinctio sunt, mollitia et! <br><br>
-        Quidem, harum laborum magni tempore consectetur quod quia iste sunt eaque neque, eveniet deserunt non laudantium, est quam cupiditate vel exercitationem assumenda earum aliquam doloribus velit ullam temporibus accusantium! Itaque. <br><br>
-        Labore distinctio autem aliquid consectetur. Sunt quos nesciunt dicta laudantium, asperiores atque tenetur nulla quis tempora ipsum. Quia, inventore voluptatum neque exercitationem non perspiciatis quos atque, ab maiores earum eaque!</p>
-        <br><br>
+        <h2 class="titulos">CARRITO DE COMPRAS</h2>
+        <img class="imagenProducto" src="../assets/Taza.jpeg" alt="Taza">
+        <div id="alinear">
+            <h4 class="producto">Taza gris</h4>
+            <h5 class="producto">$ 900</h5>
+            <br><br>
+            <form class="form" action="#" method="#">
+                <label for="cantidad">Cantidad:</label>
+                <select name="cantidad" id="cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <br><br>
+                <label for="color">Color:</label>
+                <select name="color" id="color">
+                    <option value="gris">Gris</option>
+                    <option value="amarillo">Amarillo</option>
+                    <option value="azul">Azul</option>
+                </select>
+                <br><br>
+                <label for="codigoPostal">Codigo Postal:</label>
+                <textarea name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
+                <br><br><br>
+                <a href="../vistas/productos.html"><input class="boton" type= "button" value="Seguir comprando"></a>
+                <input class="boton" type="submit" value="Comprar">
+            </form>
+            <br><br>
+        </div>
     </main>
     <footer>
         <div class="direccion">
