@@ -19,13 +19,6 @@ header {
     background-color: #E2D8CE;
 }
 
-/* Formato del Logo*/
-header h1 {
-    color: black;
-    font-weight: 400;
-    font-size: 3rem;
-}
-
 /* Formato del menu*/
 .menu {
     color: black;
@@ -39,6 +32,34 @@ a {
     font-weight: 400;
     font-size: 1.5rem;
 }
+
+h1 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;   
+    font-size: 3rem;
+}
+
+ul li {
+    position: relative;
+}
+
+ul ul {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul ul li {
+    text-align: center;
+}
+
+ul li:hover ul {
+    display:block;
+}
+
 
 /* Formato para títulos*/
 .titulos {
@@ -133,10 +154,11 @@ footer {
 
 /* Formato para parrafos */
 
-.parrafo {
+p {
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.5;
+    text-align: justify;
 }
 
 /* Formato para formularios*/
