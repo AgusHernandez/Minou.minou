@@ -12,17 +12,23 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin-left: 150px;
-    margin-right: 150px;
-    /*border: hotpink;
-    border-style: solid;*/
+    margin-left: 160px;
+    margin-right: 160px;
+    border: hotpink;
+    border-style: solid;
 }
 
 header {
-    background-color: #E2D8CE;
+    background-color: #D9C0BA;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    height: 80px;
+    align-items: center;
 }
 
 section {
+    display: flex;
     position: relative;
 }
 
@@ -58,7 +64,7 @@ ul ul {
     position: absolute;
     text-decoration: none;
     list-style-type: none;
-    background-color: #E2D8CE;
+    background-color: #D9C0BA;
     border-style: ridge;
     border-color: #CDA292;
 }
@@ -66,13 +72,14 @@ ul ul {
 ul li:hover ul {
     display:block;
     padding: 10px;
+    z-index: 1;
 }
 
 /* Encabezado*/
 
 #portada {
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 
 /* Formato para títulos*/
@@ -86,13 +93,34 @@ ul li:hover ul {
 }
 
 /* Formato para todos los productos de la página */
-.producto {
-    display: inline-block;
-    position: relative;
-    padding: 20px;
-    margin-left: 50px;
-    margin-bottom: 50px;
 
+.productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+
+.productos div {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.productos div div {
+    flex-direction: column;
+    justify-content:center;
+    background-color: #D9C0BA;
+    font-size: 1.5rem;
+    line-height: 2;
+    width: 292px;
+    height: 80px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 12%;
 }
 
 .imagenProducto {
@@ -101,48 +129,51 @@ ul li:hover ul {
     border-radius: 11px;
 }
 
-.descripProducto {
-    font-size: 1.5rem;
-    line-height: 2.5;
-    background-color: #D9C0BA;
-    width: 292px;
-    height: 70px;
-    border-radius: 8px;
-    text-align: center;
+.productos button {
+    width: 40vh;
+    height: 8vh;
+    margin: 5vh;
+    display: inline;
     position: absolute;
-    bottom: 0%;
+    justify-content:center;
+    align-items: center;
+    top: 100%;
 }
 
-button.boton {
-    margin: 50px;
-    position: absolute;
-    left: 405px;
-    top: 500px;
-}
-
-/* Formato para sección información importante del index*/
+/* INFO UTIL INDEX */
 
 .infoUtil {
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 15vh 0vh 0vh 0vh;
+    padding: 5vh;
+}
+
+.infoUtil div {
+    text-align: center;
+    width: 50vh;
+    height: 30vh;
+    margin: 5vh;
+    flex-grow: 1;
 }
 
 .imagenInfoUtil {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     margin: 20px;
 }
 
-.info {
-    text-align: center;
-    margin: 50px;
-    padding: 50px;
-    display: inline-block;
-    border-left: solid;
+#tamañoEnvios {
+    width: 150px;
+    height: 150px;
+    margin: 0px;
 }
 
-/* Formato para sección "Nosotros" */
+
+/* SECCION NOSOTROS*/
 
 video {
     width: 50%;
@@ -209,7 +240,7 @@ div form {
     margin: 60px;
 }
 
-/* Formato para sección Contacto */
+/* SECCION CONTACTOS */
 
 main p {
     margin: 20px;
@@ -240,39 +271,52 @@ input.boton {
     width: 20px;
 }
 
-/* Formato para pie de pagina*/
+/* FOOTER */
 footer {
-    background-color: #E2D8CE;
-    position: relative;
+    display: flex;
+    background-color: #D9C0BA;
     width: 100%;
+    height: 21vh;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
 }
 
-.direccion {
-    font-weight: 100;
+footer section h4 {
+    font-weight: 400;
     font-size: 1.5rem;
-    text-align: left;
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin: 5px;
+    line-height: 2;
+    color: black;
+    flex-grow: 1;
+    padding: 5vh;
 }
 
-.leyenda {
-    font-weight: bold;
-    font-size: 2.5rem;
+footer section h2 {
+    font-weight: 700;
+    font-size: 3.5rem;
     text-align: center;
-    display: block;
-    position: relative;
-    top: 25px;
+    line-height: 1.5;
+    flex-grow: 2;
+    color: #EAE6DA;
+    margin: 0vh 8vh;
+    padding: 5vh;
 }
 
-.redSocial {
-    font-weight: 100;
-    font-size: 1.5rem;
-    display: inline-block;
-    position: relative;
-    left: 90%;
-    bottom: 30px;
+footer .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 5vh;
+}
+
+footer .redes img {
+    height: 6vh;
+    padding: 5px;
+}
+
+#contacto {
+    height: 6.5vh;
 }
 
 /*para todos los botones de la página*/
