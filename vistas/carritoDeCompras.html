@@ -16,7 +16,10 @@
                 <li class="menu"><a href="../vistas/productos.html">PRODUCTOS</a>
                     <ul>
                         <li><a href="#">Cocina</a></li>
+                        <hr>
                         <li><a href="#">Living</a></li>
+                        <hr>
+                        <li><a href="#">Mascotas</a></li>
                     </ul>
                 </li>
                 <li class="menu"><a href="../vistas/nosotros.html">NOSOTROS</a></li>
@@ -27,33 +30,36 @@
     </header>
     <main>
         <h2 class="titulos">CARRITO DE COMPRAS</h2>
-        <img class="imagenProducto" src="../assets/taza.jpeg" alt="taza">
-        <div id="alinear">
-            <h4 class="producto">Taza gris</h4>
-            <h5 class="producto">$ 900</h5>
-            <br><br>
+        <img id="imagenProd" src="../assets/taza.jpeg" alt="taza">
+        <div>
+            <div class="prodCarrito">
+                <h4>Taza gris</h4>
+                <h5>$ 900</h5>
+            </div>
             <form class="form" action="#" method="#">
-                <label for="cantidad">Cantidad:</label>
-                <select name="cantidad" id="cantidad">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
-                <br><br>
-                <label for="color">Color:</label>
-                <select name="color" id="color">
-                    <option value="gris">Gris</option>
-                    <option value="amarillo">Amarillo</option>
-                    <option value="azul">Azul</option>
-                </select>
-                <br><br>
-                <label for="codigoPostal">Codigo Postal:</label>
-                <textarea name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
-                <br>
-                <a href="../vistas/productos.html"><input class="boton" type= "button" value="Seguir comprando"></a>
-                <input class="boton" type="submit" value="Comprar">
+                <div class="compras">
+                    <label for="cantidad">Cantidad:</label>
+                    <select class="casilleroCarrito" name="cantidad" id="cantidad">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="compras">
+                    <label for="color">Color:</label>
+                    <select class="casilleroCarrito" name="color" id="color">
+                        <option value="gris">Gris</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                </div>
+                <div class="compras">
+                    <label for="codigoPostal">Codigo Postal:</label>
+                    <textarea class="casilleroCarrito" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
+                </div>
+                <a href="../vistas/productos.html"><input class="botCarrito" type= "button" value="Seguir comprando"></a>
+                <input class="botCarrito" type="submit" value="Comprar">
             </form>
-            <br><br>
         </div>
     </main>
     <footer>
