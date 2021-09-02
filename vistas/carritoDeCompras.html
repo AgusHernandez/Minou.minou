@@ -24,54 +24,49 @@
                 </li>
                 <li class="menu"><a href="../vistas/nosotros.html">NOSOTROS</a></li>
                 <li class="menu"><a href="../vistas/contacto.html">CONTACTO</a></li>
-                <li class="menu"><a href="../vistas/carritoDeCompras.html"> <img src="../assets/carritoCompras.png" alt="Carrito de  Compras"> </a></li>
+                <li class="menu"><a href="../vistas/carritoDeCompras.html"> <img src="../assets/compras.svg" alt="Carrito de  Compras"> </a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2 class="titulos">CARRITO DE COMPRAS</h2>
-        <img id="imagenProd" src="../assets/taza.jpeg" alt="taza">
-        <div>
-            <div class="prodCarrito">
-                <h4>Taza gris</h4>
-                <h5>$ 900</h5>
-            </div>
+        <section>
+            <img id="imagenProd" src="../assets/taza.jpeg" alt="taza">
+            <h4>Taza gris</h4>
+            <h5>$ 900</h5>
             <form class="form" action="#" method="#">
-                <div class="compras">
-                    <label for="cantidad">Cantidad:</label>
-                    <select class="casilleroCarrito" name="cantidad" id="cantidad">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-                <div class="compras">
-                    <label for="color">Color:</label>
-                    <select class="casilleroCarrito" name="color" id="color">
-                        <option value="gris">Gris</option>
-                        <option value="amarillo">Amarillo</option>
-                        <option value="azul">Azul</option>
-                    </select>
-                </div>
-                <div class="compras">
-                    <label for="codigoPostal">Codigo Postal:</label>
-                    <textarea class="casilleroCarrito" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
-                </div>
+                <label for="cantidad">Cantidad:</label>
+                <select class="casilleroCarrito" name="cantidad" id="cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="cdivolor">Color:</label>
+                <select class="casilleroCarrito" name="color" id="color">
+                    <option value="gris">Gris</option>
+                    <option value="amarillo">Amarillo</option>
+                    <option value="azul">Azul</option>
+                </select>
+                <label for="codigoPostal">Codigo Postal:</label>
+                <textarea class="casilleroCarrito" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
                 <a href="../vistas/productos.html"><input class="botCarrito" type= "button" value="Seguir comprando"></a>
                 <input class="botCarrito" type="submit" value="Comprar">
             </form>
-        </div>
+        </section>
     </main>
     <footer>
-        <div class="direccion">
-            <h4>Donde estamos?</h4>
-            <h5>Av. Martín García 200, Barracas, CABA</h5>
-        </div>
-        <div class="leyenda">
-            <h2><strong>Hacemos de tu casa, <br> un Hogar</strong></h2>
-        </div>
-        <li class="redSocial"><img src="../assets/logoInstagram.png" alt="Instagram"></li> 
-        <li class="redSocial"><a href="../vistas/contacto.html"><img src="../assets/sobre.png" alt="Contacto"></a></li>
+        <section>
+            <h4>Donde estamos? <br>
+                Av. Martín García 200, Barracas, CABA
+            </h4>
+        </section>
+        <section>
+            <h2>Hacemos de tu casa, <br> un Hogar</h2>
+        </section>
+        <section class="redes">
+        <img src="../assets/iconoInstagram.svg" alt="Instagram"> 
+        <a href="../vistas/contacto.html"><img id="contacto" src="../assets/contacto.svg" alt="Contacto"></a>
+        </section>
     </footer>
 </body>
 </html>

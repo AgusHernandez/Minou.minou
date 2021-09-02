@@ -24,33 +24,33 @@
                 </li>
                 <li class="menu"><a href="./vistas/nosotros.html">NOSOTROS</a></li>
                 <li class="menu"><a href="./vistas/contacto.html">CONTACTO</a></li>
-                <li class="menu"><a href="./vistas/carritoDeCompras.html"> <img src="./assets/carritoCompras.png" alt="carrito de  Compras"></a></li>
+                <li class="menu"><a href="./vistas/carritoDeCompras.html"> <img src="./assets/compras.svg" alt="carrito de  Compras"></a></li>
             </ul>
         </nav>
-        <div>
-            <img id="portada" src="./assets/portada.jpg" alt="portada">
-        </div>
     </header>
+    <section>
+        <img id="portada" src="./assets/portada.jpg" alt="portada">
+    </section>
     <main>
-        <section>
-            <h2 class="titulos">PRODUCTOS</h2>
-            <div class="producto">
+        <h2 class="titulos">PRODUCTOS</h2>
+        <section class="productos">
+            <div>
                 <img class="imagenProducto" src="./assets/taza.jpeg" alt="taza">
-                <div class="descripProducto">
+                <div>
                     <h4>Taza gris</h4>
                     <h5>$ 900</h5>
                 </div>
             </div>
-            <div class="producto">
+            <div>
                 <img class="imagenProducto" src="./assets/macetero.jpeg" alt="macetero">
-                <div class="descripProducto">
+                <div>
                     <h4>Macetero Vertical</h4>
                     <h5>$ 1.500</h5>
                 </div>
             </div>
-            <div class="producto">
+            <div>
                 <img class="imagenProducto" src="./assets/cestoJuguetes.jpeg" alt="cesto para juguetes">
-                <div class="descripProducto">
+                <div>
                     <h4>Cesto para juguetes</h4>
                     <h5>$ 1.200</h5>
                 </div>
@@ -59,29 +59,32 @@
         </section>
         <section class="infoUtil">
             <div class="info">
-                <img class="imagenInfoUtil" src="./assets/paquete.png" alt="envíos">
+                <img class="imagenInfoUtil" id="tamañoEnvios" src="./assets/carroEnvios.svg" alt="envíos">
                 <h4>HACEMOS ENVÍOS A <br> TODO EL PAÍS</h4>
             </div>
             <div class="info">
-                <img class="imagenInfoUtil" src="./assets/tarjeta.png" alt="pagos">
+                <img class="imagenInfoUtil" src="./assets/tarjetaCredito.svg" alt="pagos">
                 <h4>ACEPTAMOS TODOS LOS <br> MEDIOS DE PAGO</h4>
             </div>
             <div class="info">
-                <img class="imagenInfoUtil" src="./assets/logoWhatsapp.png" alt="whatsapp">
+                <img class="imagenInfoUtil" src="./assets/icoWhatsapp.svg" alt="whatsapp">
                 <h4>ESCRIBINOS !</h4>
             </div>
         </section>
     </main>
     <footer>
-        <div class="direccion">
-            <h4>Donde estamos?</h4>
-            <h5>Av. Martín García 200, Barracas, CABA</h5>
-        </div>
-        <div class="leyenda">
+        <section>
+            <h4>Donde estamos? <br>
+                Av. Martín García 200, Barracas, CABA
+            </h4>
+        </section>
+        <section>
             <h2>Hacemos de tu casa, <br> un Hogar</h2>
-        </div>
-        <li class="redSocial"><img src="./assets/logoInstagram.png" alt="Instagram"></li> 
-        <li class="redSocial"><a href="./vistas/contacto.html"><img src="./assets/sobre.png" alt="Contacto"></a></li>
+        </section>
+        <section class="redes">
+        <img src="./assets/iconoInstagram.svg" alt="Instagram"> 
+        <a href="./vistas/contacto.html"><img id="contacto" src="./assets/contacto.svg" alt="Contacto"></a>
+        </section>
     </footer>
 </body>
 </html>
