@@ -12,8 +12,8 @@
         <h1><a href="index.html">MINOU.MINOU</a></h1> <!-- Logo -->
         <nav>
             <ul>
-                <li class="menu"><a href="index.html">INICIO</a></li>
-                <li class="menu"><a href="./vistas/productos.html">PRODUCTOS</a>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="./vistas/productos.html">PRODUCTOS</a>
                    <ul>
                         <li><a href="#">Cocina</a></li>
                         <hr>
@@ -22,11 +22,14 @@
                         <li><a href="#">Mascotas</a></li>
                     </ul>
                 </li>
-                <li class="menu"><a href="./vistas/nosotros.html">NOSOTROS</a></li>
-                <li class="menu"><a href="./vistas/contacto.html">CONTACTO</a></li>
-                <li class="menu"><a href="./vistas/carritoDeCompras.html"> <img src="./assets/compras.svg" alt="carrito de  Compras"></a></li>
+                <li><a href="./vistas/nosotros.html">NOSOTROS</a></li>
+                <li><a href="./vistas/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
+        <div>
+            <img id="cuenta" src="./assets/cuenta.svg" alt="Mi cuenta">
+            <a href="./vistas/carritoDeCompras.html"><img id="bag" src="./assets/compras.svg" alt="carrito de Compras"></a>
+        </div>
     </header>
     <section>
         <img id="portada" src="./assets/portada.jpg" alt="portada">
@@ -34,27 +37,27 @@
     <main>
         <h2 class="titulos">PRODUCTOS</h2>
         <section class="productos">
-            <div>
-                <img class="imagenProducto" src="./assets/taza.jpeg" alt="taza">
+            <article>
+                <img src="./assets/taza.jpeg" alt="taza">
                 <div>
-                    <h4>Taza gris</h4>
+                    <h4>Taza</h4>
                     <h5>$ 900</h5>
                 </div>
-            </div>
-            <div>
-                <img class="imagenProducto" src="./assets/macetero.jpeg" alt="macetero">
+            </article>
+            <article>
+                <img src="./assets/macetero.jpeg" alt="macetero">
                 <div>
                     <h4>Macetero Vertical</h4>
                     <h5>$ 1.500</h5>
                 </div>
-            </div>
-            <div>
-                <img class="imagenProducto" src="./assets/cestoJuguetes.jpeg" alt="cesto para juguetes">
+            </article>
+            <article>
+                <img src="./assets/cestoJuguetes.jpeg" alt="cesto para juguetes">
                 <div>
                     <h4>Cesto para juguetes</h4>
                     <h5>$ 1.200</h5>
                 </div>
-            </div>
+            </article>
             <button class="boton"><a href="./vistas/productos.html">VER MÁS</a></button>
         </section>
         <section class="infoUtil">
@@ -82,8 +85,14 @@
             <h2>Hacemos de tu casa, <br> un Hogar</h2>
         </section>
         <section class="redes">
-        <img src="./assets/iconoInstagram.svg" alt="Instagram"> 
-        <a href="./vistas/contacto.html"><img id="contacto" src="./assets/contacto.svg" alt="Contacto"></a>
+            <div>
+                <img src="../assets/iconoInstagram.svg" alt="Instagram">
+                <p>Seguinos !</p> 
+            </div>
+            <div>
+                <a href="../vistas/contacto.html"><img id="contacto" src="../assets/contacto.svg" alt="Contacto"></a>
+                <p>Contactanos !</p>
+            </div>
         </section>
     </footer>
 </body>
