@@ -12,8 +12,14 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin-left: 30vh;
-    margin-right: 30vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "port port port"
+    "product product product"
+    "info info info"
+    "footer footer footer";
+    justify-content: center;
     /*border: hotpink;
     border-style: solid;*/
 }
@@ -22,6 +28,7 @@ body {
 /* MENU */
 
 header {
+    grid-area: header;
     background-color: #D9C0BA;
     display: flex;
     justify-content: space-around;
@@ -97,6 +104,10 @@ header div {
 
 /* PORTADA */
 
+#sectionPortada {
+    grid-area: port;
+}
+
 #portada {
     width: 100%;
     height: 450px;
@@ -113,6 +124,10 @@ header div {
 }
 
 /* PRODUCTOS INDEX */
+
+#sectionProduct {
+    grid-area: product;
+}
 
 .productos {
     display: flex;
@@ -178,6 +193,7 @@ header div {
 /* INFO UTIL INDEX */
 
 .infoUtil {
+    grid-area: info;
     font-size: 2rem;
     font-weight: 600;
     display: flex;
@@ -358,6 +374,7 @@ header div {
 
 /* FOOTER */
 footer {
+    grid-area: footer;
     display: flex;
     background-color: #D9C0BA;
     width: 100%;
