@@ -32,41 +32,52 @@
         </div>
     </header>
     <main>
-        <h2 class="titulos">CARRITO DE COMPRAS</h2>
-        <section class="compra">
-            <img src="../assets/taza.jpeg" alt="taza">
-            <article>
-                <h4>Taza</h4>
-                <h5>$ 900</h5>
-                <div>
-                    <form action="#" method="#">
-                        <div>
-                            <label for="cantidad">Cantidad:</label>
-                            <select class="casillero" name="cantidad" id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
+        <section id="carrito">
+            <div>
+                <h2 class="titulos">CARRITO DE COMPRAS</h2>
+            </div>
+               <section class="compra">
+                    <div>
+                        <img src="../assets/taza.jpeg" alt="taza">
+                    </div>
+                    <div>
+                        <article>
+                            <div id="item">
+                                <h4>Taza</h4>
+                                <h5>$ 900</h5>
+                            </div>
+                            <div>
+                                <form action="#" method="#">
+                                    <div>
+                                    <label for="cantidad">Cantidad:</label>
+                                    <select class="casillero" name="cantidad" id="cantidad">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="color">Color:</label>
+                                    <select class="casillero" name="color" id="color">
+                                        <option value="gris">Gris</option>
+                                        <option value="amarillo">Amarillo</option>
+                                        <option value="azul">Azul</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="codigoPostal">Codigo Postal:</label>
+                                    <textarea class="casillero" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
+                                </div>
+                                <div>
+                                    <a href="../vistas/productos.html"><input class="boton" type= "button" value="Seguir comprando"></a>
+                                    <input class="boton" type="submit" value="Comprar">
+                                </div>
+                            </form>
                         </div>
-                        <div>
-                            <label for="color">Color:</label>
-                            <select class="casillero" name="color" id="color">
-                                <option value="gris">Gris</option>
-                                <option value="amarillo">Amarillo</option>
-                                <option value="azul">Azul</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="codigoPostal">Codigo Postal:</label>
-                            <textarea class="casillero" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
-                        </div>
-                        <div>
-                            <a href="../vistas/productos.html"><input class="boton" type= "button" value="Seguir comprando"></a>
-                            <input class="boton" type="submit" value="Comprar">
-                        </div>
-                    </form>
-                </div>
-            </article>
+                    </article>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
     <footer>
