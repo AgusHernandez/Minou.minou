@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 0vh 15vh 0vh 15vh;
+    margin: 0vh 5vh 0vh 5vh;
     /*border: hotpink;
     border-style: solid;*/
 }
@@ -23,6 +23,7 @@ body {
 header {
     background-color: #D9C0BA;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
@@ -37,24 +38,22 @@ a {
 }
 
 header h1 a {
-    list-style-type: none;
     text-decoration: none;
+    list-style-type: none;
     color: black;
     font-weight: 400;   
     font-size: 3rem;
-    flex-grow: 1;
-}
-
-
-header ul {
-    display: flex;
     flex-grow: 2;
 }
 
+header nav ul {
+    display: flex;
+    flex-grow: 2;
+    gap: 20px;
+}
+
 header ul li {
-    padding: 10px;
     list-style-type: none;
-    
 }
 
 header ul ul {
@@ -91,7 +90,7 @@ header div {
 #bag {
     height: 45px;
     order: 0;
-    margin: 15px;
+    margin: 10px;
 }
 
 /* PORTADA */
@@ -138,6 +137,7 @@ header div {
 
 .productos article {
     display: flex;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
     align-content: center;
@@ -381,7 +381,7 @@ header div {
     flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 30px;
     width: 250px;
     height: 50px;
@@ -398,12 +398,14 @@ footer {
     align-content: center;
 }
 
-footer section h4 {
-    font-weight: 400;
+#direccion h4 {
+    font-weight: 600;
     font-size: 1.5rem;
-    line-height: 2;
-    color: black;
-    flex-grow: 2;
+}
+
+#direccion p {
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 footer section h2 {
@@ -414,18 +416,20 @@ footer section h2 {
     flex-grow: 2;
     color: #EAE6DA;
     padding: 5vh;
+    margin-right: 10vh;
 }
 
-footer .redes {
+.redes {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     flex-grow: 0;
+    margin: 0vh;
     padding: 5vh;
 }
 
-footer .redes img {
+.redes img {
     height: 4vh;
     padding: 5px;
 }
@@ -438,6 +442,20 @@ footer .redes div {
     display: flex;
     align-items: center;
     width: 145px;
+}
+
+footer nav {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+footer nav ul {
+    display: none;
+    flex-direction: column;
+}
+
+footer ul li {
+    list-style-type: none;
 }
 
 /* BOTONES */
@@ -458,4 +476,104 @@ p {
     font-weight: 300;
     line-height: 1.5;
     text-align: justify;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+    
+    body {
+        margin: 0vh 0vh 0vh 0vh;
+    }
+
+    /* HEADER */
+
+    header nav ul {
+        display: none;
+    }
+
+    header h1, header div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* PRODUCTOS INDEX */
+    
+
+    /* FOOTER */
+
+    #direccion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer section h2 {
+        display: none;
+    }
+
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-grow: 1;
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0vh 0vh 0vh 0vh;
+    }
+
+    /* HEADER */
+
+    nav ul {
+        display: none;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header h1, header div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* FOOTER */
+    
+    footer section h2 {
+        display: none;
+    }
+
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        flex-grow: 2;
+        padding: 20px;
+        margin: 0vh 5vh 0vh 5vh;
+    }
+
+    #direccion {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 25px 0px 25px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+        margin: 0vh 15vh 0vh 15vh;
+    }
 }
