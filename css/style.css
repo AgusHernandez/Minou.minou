@@ -115,12 +115,13 @@ header div {
 .productos {
     display:grid;
     gap: 3rem;
-    padding: 50px;
+    padding: 0px 50px 0px 50px;
     align-content: center;
     justify-content: center;
     justify-items: center;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows:1fr 1fr 1fr 0fr;
     margin: 2rem;
+    position: relative;
 }
 
 .carta {
@@ -142,17 +143,15 @@ header div {
     border-radius: 11px;
 }
 
-#verMasboton{
-    grid-row: span 3;
+/*.productos div button {
+    grid-row: 5;
     justify-self: center;
     align-self:center;
-}
+}*/
 
 .productos button {
     width: 40vh;
     height: 8vh;
-    display: inline;
-    position: absolute;
     justify-content:center;
     align-items: center;
     top: 100%;
@@ -469,16 +468,6 @@ footer ul li {
 
     /* PRODUCTOS INDEX */
 
-    .productos {
-        /*display:grid;
-        gap: 3rem;
-        padding: 50px;
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 2rem;*/
-    }
 
     /* FOOTER */
 
@@ -524,6 +513,10 @@ footer ul li {
 
     /* FOOTER */
     
+    footer {
+        height: 30vh;
+    }
+
     footer section h2 {
         display: none;
     }
@@ -535,7 +528,7 @@ footer ul li {
         align-items: center;
         gap: 10px;
         flex-grow: 2;
-        padding: 20px;
+        padding: 10px 20;
         margin: 0vh 5vh 0vh 5vh;
     }
 
@@ -557,8 +550,15 @@ footer ul li {
     /* PRODUCTOS INDEX */
 
     .productos {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 0fr;
+        row-gap: 100px;
     }
+
+    .productos button {
+        grid-column:-3;
+    }
+
 
     /* FOOTER */
 
