@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Minou.minou | Artículos para el Hogar</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html">MINOU.MINOU</a></h1> <!-- Logo -->
+        <h1 class="logo"><a href="index.html">MINOU.MINOU</a></h1> <!-- Logo -->
         <nav>
             <ul>
                 <li><a href="index.html">INICIO</a></li>
@@ -35,61 +35,66 @@
         <img id="heroSection" src="./assets/portada.jpg" alt="portada">
     </section>
     <main>
-        <section id="sectionProduct">
-            <div>
-                <h2 class="titulos">PRODUCTOS</h2>
-            </div>
-            <div>
-                <section class="productos">
-                    <article>
-                        <img src="./assets/taza.jpeg" alt="taza">
-                        <div>
-                            <h4>Taza</h4>
-                            <h5>$ 900</h5>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/macetero.jpeg" alt="macetero">
-                        <div>
-                            <h4>Macetero Vertical</h4>
-                            <h5>$ 1.500</h5>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/cestoJuguetes.jpeg" alt="cesto para juguetes">
-                        <div>
-                            <h4>Cesto para juguetes</h4>
-                            <h5>$ 1.200</h5>
-                        </div>
-                    </article>
-                </section>
-            </div>
-            <div id="verMasboton">
-                <button class="boton"><a href="./vistas/productos.html">VER MÁS</a>
-                </button>
-            </div>
+        <h2 class="titulos">PRODUCTOS</h2>
+        <section class="productos">
+            <article class="carta">
+                <div>
+                    <img src="./assets/taza.jpeg" alt="taza">
+                </div>
+                <h4>Taza</h4>
+                <p>$ 900</p>
+            </article>
+            <article class="carta">
+                <div>
+                    <img src="./assets/macetero.jpeg" alt="macetero">
+                </div>
+                <h4>Macetero Vertical</h4>
+                <p>$ 1.500</p>
+            </article>
+            <article class="carta">
+                <div>
+                    <img src="./assets/cestoJuguetes.jpeg" alt="cesto para juguetes">
+                </div>
+                <h4>Cesto para juguetes</h4>
+                <p>$ 1.200</p>
+            </article>
+            <button><a href="./vistas/productos.html">VER MAS</a>
+            </button>
         </section>
         <section class="infoUtil">
-            <div>
-                <img class="imagenInfoUtil" id="tamañoEnvios" src="./assets/carroEnvios.svg" alt="envíos">
+            <article class="cartaInfo">
+                <div>
+                    <img class="imagenInfoUtil" id="tamañoEnvios" src="./assets/carroEnvios.svg" alt="envíos">
+                </div>
                 <h4>HACEMOS ENVÍOS A <br> TODO EL PAÍS</h4>
-            </div>
-            <div>
-                <img class="imagenInfoUtil" src="./assets/tarjetaCredito.svg" alt="pagos">
-                <h4>ACEPTAMOS TODOS LOS <br> MEDIOS DE PAGO</h4>
-            </div>
-            <div>
-                <img class="imagenInfoUtil" src="./assets/icoWhatsapp.svg" alt="whatsapp">
+            </article>
+            <article class="cartaInfo">
+                <div>
+                    <img class="imagenInfoUtil" src="./assets/tarjetaCredito.svg" alt="pagos">
+                </div>
+                <h4>ACEPTAMOS TODOS LOS MEDIOS DE PAGO</h4>
+            </article>
+            <article id="whatsapp" class="cartaInfo">
+                <div>
+                    <img class="imagenInfoUtil" src="./assets/icoWhatsapp.svg" alt="whatsapp">
+                </div>
                 <h4>ESCRIBINOS !</h4>
-            </div>
+            </article>
         </section>
     </main>
     <footer>
-        <section>
-            <h4>Donde estamos? <br>
-                Av. Martín García 200, Barracas, CABA
-            </h4>
+        <section id="direccion">
+            <h4>Donde estamos?</h4>
+            <p>Av. Martín García 200, CABA</p> 
         </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./vistas/productos.html">Productos</a></li>
+                <li><a href="./vistas/nosotros.html">Nosotros</a></li>
+                <li><a href="./vistas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
         <section>
             <h2>Hacemos de tu casa, <br> un Hogar</h2>
         </section>
@@ -100,7 +105,7 @@
             </div>
             <div>
                 <a href="./vistas/contacto.html"><img id="contacto" src="./assets/contacto.svg" alt="Contacto"></a>
-                <p>Contactanos !</p>
+                <p>Contactanos</p>
             </div>
         </section>
     </footer>
