@@ -58,6 +58,7 @@ header ul li {
 
 header ul ul {
     display: none;
+    line-height: 1.5;
     position: absolute;
     text-decoration: none;
     list-style-type: none;
@@ -68,7 +69,7 @@ header ul ul {
 
 header ul li:hover ul {
     display:block;
-    padding: 10px;
+    padding: 20px;
     z-index: 1;
 }
 
@@ -178,19 +179,41 @@ header div {
     height: 12rem;
 }
 
-#whatsapp .cartaInfo {
+/*#whatsapp .cartaInfo {
     grid-column: -3;
-}
+}*/
 
 /* SECCION PRODUCTOS */
 
-#prod {
-    display: grid;
-    grid-template-rows: 20% 55% 55%;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    align-items: center;
-    margin: 0vh 0vh 28vh 0vh ;
+.product {
+    display:grid;
+    gap: 5rem;
+    padding: 0px 50px 0px 50px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 9rem;
+}
+
+.cartaProductos {
+    background-color: #D9C0BA;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    line-height: 2;
+    border-radius: 19px;
+    width: 250px;
+    height: 380px;
+}
+
+.cartaProductos div img {
+    width: 250px;
+    height: 300px;
+    border-radius: 11px;
 }
 
 /* SECCION NOSOTROS*/
@@ -436,15 +459,6 @@ footer nav ul li a {
     height: 50px;
 }*/
 
-/* PARRAFOS */
-
-/*p {
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.5;
-    text-align: justify;
-}*/
-
 
 /* MEDIA QUERIES */
 
@@ -458,16 +472,16 @@ footer nav ul li a {
 
     /* HEADER */
 
+    header {
+        justify-content: center;
+    }
+
     header div img {
         display: none;
     }
 
     header nav ul {
         display: none;
-    }
-
-    header {
-        text-align: center;
     }
 
     /* FOOTER */
@@ -491,7 +505,7 @@ footer nav ul li a {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
     body {
         margin: 0vh 0vh 0vh 0vh;
@@ -499,12 +513,12 @@ footer nav ul li a {
 
     /* HEADER */
 
-    header div img {
-        display: none;
+    header {
+        justify-content: space-around;
     }
 
-    header {
-        justify-content: space-between;
+    header div img {
+        display: none;
     }
 
     header nav ul {
@@ -564,7 +578,13 @@ footer nav ul li a {
 @media only screen and (min-width: 1024px) {
 
     body {
-        margin: 0vh 15vh 0vh 15vh;
+        margin: 0vh 5vh 0vh 5vh;
+    }
+
+    /* HEADER */
+
+    header nav ul {
+        gap: 10px;
     }
 
     /* PRODUCTOS INDEX */
@@ -572,39 +592,75 @@ footer nav ul li a {
     .productos {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1.5fr 0fr;
-        row-gap: 100px;
+        row-gap: 80px;
+    }
+
+    .carta {
+        width: 200px;
+        height: 325px;
+    }
+        
+    .carta div img {
+        width: 200px;
+        height: 250px;
     }
 
     .productos button {
         grid-column:-3;
     }
 
-    .carta {
-    width: 292px;
-    height: 401px;
-    }
-
-    .carta div img {
-    width: 292px;
-    height: 330px;
-    }
-
     .productos button {
-        width: 40vh;
-        height: 8vh;
+        width: 22rem;
+        height: 6rem;
         justify-content:center;
         align-items: center;
+    }
+
+    /* INFO UTIL */
+
+    .infoUtil {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 30rem;
+        justify-content: center;
+    }
+
+    .cartaInfo {
+        width: 15rem;
+        height: 10rem;
     }
 
     /* FOOTER */
 
     footer section h2 {
         margin-right: 0vh;
+        font-size: 3rem;
+        padding: 0rem 20rem;
     }
 
     #direccion {
+        font-size: 5rem;
         display: flex;
         flex-direction: column;
         padding: 0px 30px 0px 30px;
+    }
+
+    #direccion h4 {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2;
+    }
+
+    #direccion p {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+
+    footer .redes div {
+        display: flex;
+        align-items: center;
+        width: 15rem;
+        font-size: 1.5rem;
     }
 }
