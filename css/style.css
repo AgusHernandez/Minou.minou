@@ -133,56 +133,53 @@ header div {
     font-size: 1.5rem;
     line-height: 2;
     border-radius: 19px;
-    width: 292px;
-    height: 401px;
+    width: 192px;
+    height: 330px;
 }
 
 .carta div img {
-    width: 292px;
-    height: 330px;
+    width: 190px;
+    height: 250px;
     border-radius: 11px;
 }
 
-/*.productos div button {
-    grid-row: 5;
-    justify-self: center;
-    align-self:center;
-}*/
-
 .productos button {
-    width: 40vh;
-    height: 8vh;
+    width: 11rem;
+    height: 5rem;
     justify-content:center;
     align-items: center;
-    top: 100%;
+    font-weight: 400;
+    background-color: #CDA292;
+    border-radius: 44px;
 }
 
 /* INFO UTIL INDEX */
 
 .infoUtil {
-    font-size: 2rem;
-    font-weight: 600;
-    display: flex;
+    display:grid;
+    gap:1.5rem;
+    padding: 0px 50px 0px 50px;
+    align-content: center;
     justify-content: center;
-    align-items: baseline;
-    padding: 5vh;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
 }
 
-.infoUtil div {
+.cartaInfo {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    width: 50vh;
-    height: 30vh;
-    flex-grow: 1;
+    justify-content: baseline;
+    align-self: center;
+    width: 8rem;
+    height: 12rem;
 }
 
-.imagenInfoUtil {
-    width: 100px;
-    height: 100px;
-}
-
-#tamañoEnvios {
-    width: 150px;
-    height: 150px;
+#whatsapp .cartaInfo {
+    grid-column: -3;
 }
 
 /* SECCION PRODUCTOS */
@@ -364,9 +361,14 @@ footer {
     align-content: center;
 }
 
+#direccion {
+    padding-left: 1rem;
+}
+
 #direccion h4 {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    line-height: 2;
 }
 
 #direccion p {
@@ -407,21 +409,20 @@ footer section h2 {
 footer .redes div {
     display: flex;
     align-items: center;
-    width: 145px;
-}
-
-footer nav {
-    font-weight: 400;
-    font-size: 1.5rem;
+    width: 8rem;
 }
 
 footer nav ul {
     display: none;
     flex-direction: column;
+    justify-items: center;
+    list-style: none;
 }
 
-footer ul li {
-    list-style-type: none;
+footer nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /* BOTONES */
@@ -457,17 +458,17 @@ footer ul li {
 
     /* HEADER */
 
+    header div img {
+        display: none;
+    }
+
     header nav ul {
         display: none;
     }
 
-    header h1, header div {
-        display: flex;
-        justify-content: space-evenly;
+    header {
+        text-align: center;
     }
-
-    /* PRODUCTOS INDEX */
-
 
     /* FOOTER */
 
@@ -559,6 +560,22 @@ footer ul li {
         grid-column:-3;
     }
 
+    .carta {
+    width: 292px;
+    height: 401px;
+    }
+
+    .carta div img {
+    width: 292px;
+    height: 330px;
+    }
+
+    .productos button {
+        width: 40vh;
+        height: 8vh;
+        justify-content:center;
+        align-items: center;
+    }
 
     /* FOOTER */
 
