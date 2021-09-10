@@ -641,7 +641,7 @@ footer nav ul li a {
 
     footer section h2 {
         margin-right: 0vh;
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 0rem 20rem;
     }
 
@@ -654,13 +654,13 @@ footer nav ul li a {
 
     #direccion h4 {
         font-weight: 600;
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 2;
     }
 
     #direccion p {
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 2;
     }
 
