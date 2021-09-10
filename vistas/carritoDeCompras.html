@@ -32,59 +32,53 @@
         </div>
     </header>
     <main>
-        <section id="carrito">
+        <h2 class="titulos">CARRITO DE COMPRAS</h2>
+        <section class="compra">
             <div>
-                <h2 class="titulos">CARRITO DE COMPRAS</h2>
+                <img src="../assets/taza.jpeg" alt="taza">
             </div>
-               <section class="compra">
-                    <div>
-                        <img src="../assets/taza.jpeg" alt="taza">
-                    </div>
-                    <div>
-                        <article>
-                            <div id="item">
-                                <h4>Taza</h4>
-                                <h5>$ 900</h5>
-                            </div>
-                            <div>
-                                <form action="#" method="#">
-                                    <div>
-                                    <label for="cantidad">Cantidad:</label>
-                                    <select class="casillero" name="cantidad" id="cantidad">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="color">Color:</label>
-                                    <select class="casillero" name="color" id="color">
-                                        <option value="gris">Gris</option>
-                                        <option value="amarillo">Amarillo</option>
-                                        <option value="azul">Azul</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="codigoPostal">Codigo Postal:</label>
-                                    <textarea class="casillero" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
-                                </div>
-                                <div>
-                                    <a href="../vistas/productos.html"><input class="boton" type= "button" value="Seguir comprando"></a>
-                                    <input class="boton" type="submit" value="Comprar">
-                                </div>
-                            </form>
+            <article>
+                <div id="item">
+                    <h4>Taza</h4>
+                    <h5>$ 900</h5>
+                </div>
+                <div>
+                    <form action="#" method="#">
+                        <div>
+                            <label for="cantidad">Cantidad:</label>
+                            <select class="casillero" name="cantidad" id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
                         </div>
-                    </article>
-                    </div>
-                </section>
-            </div>
+                        <div>
+                            <label for="color">Color:</label>
+                            <select class="casillero" name="color" id="color">
+                                <option value="gris">Gris</option>
+                                <option value="amarillo">Amarillo</option>
+                                <option value="azul">Azul</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="codigoPostal">Codigo Postal:</label>
+                            <textarea class="casillero" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
+                        </div>
+                        <div>
+                            <a href="../vistas/productos.html"><input class="botonCarrito" type= "button" value="Seguir comprando"></a>
+                            <input class="botonCarrito" type="submit" value="Comprar">
+                        </div>
+                    </form>
+                </div>
+            </article>
         </section>
     </main>
     <footer>
         <section>
-            <h4>Donde estamos? <br>
-                Av. Martín García 200, Barracas, CABA
-            </h4>
+            <section id="direccion">
+                <h4>Donde estamos?</h4>
+                <p>Av. Martín García 200, CABA</p> 
+            </section>
         </section>
         <section>
             <h2>Hacemos de tu casa, <br> un Hogar</h2>
@@ -96,7 +90,7 @@
             </div>
             <div>
                 <a href="../vistas/contacto.html"><img id="contacto" src="../assets/contacto.svg" alt="Contacto"></a>
-                <p>Contactanos !</p>
+                <p>Contactanos</p>
             </div>
         </section>
     </footer>
