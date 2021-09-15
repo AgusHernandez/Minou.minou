@@ -16,9 +16,7 @@
                 <li><a href="./productos.html">PRODUCTOS</a>
                    <ul>
                         <li><a href="#">Cocina</a></li>
-                        <hr>
                         <li><a href="#">Living</a></li>
-                        <hr>
                         <li><a href="#">Mascotas</a></li>
                     </ul>
                 </li>
@@ -37,59 +35,60 @@
             <div>
                 <img src="../assets/taza.jpeg" alt="taza">
             </div>
-            <article>
-                <div id="item">
+            <article id="item">
                     <h4>Taza</h4>
-                    <h5>$ 900</h5>
-                </div>
-                <div>
-                    <form action="#" method="#">
-                        <div>
-                            <label for="cantidad">Cantidad:</label>
-                            <select class="casillero" name="cantidad" id="cantidad">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="color">Color:</label>
-                            <select class="casillero" name="color" id="color">
-                                <option value="gris">Gris</option>
-                                <option value="amarillo">Amarillo</option>
-                                <option value="azul">Azul</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="codigoPostal">Codigo Postal:</label>
-                            <textarea class="casillero" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
-                        </div>
-                        <div>
-                            <a href="../vistas/productos.html"><input class="botonCarrito" type= "button" value="Seguir comprando"></a>
-                            <input class="botonCarrito" type="submit" value="Comprar">
-                        </div>
-                    </form>
-                </div>
+                    <p>$ 900</p>
+            </article>
+            <article>
+                <form action="#" method="#">
+                    <label for="cantidad">Cantidad:</label>
+                    <select class="casillero" name="cantidad" id="cantidad">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select class="casillero" name="color" id="color">
+                        <option value="gris">Gris</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <label for="codigoPostal">Codigo Postal:</label>
+                    <textarea class="casillero" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
+                </form>
+            </article>
+            <article id="botones">
+                <button class="botonCarrito">
+                    <a href="../vistas/productos.html">Seguir comprando</a>
+                </button>
+                <button class="botonCarrito">Comprar
+                </button>
             </article>
         </section>
     </main>
-    <footer>
-        <section>
-            <section id="direccion">
-                <h4>Donde estamos?</h4>
-                <p>Av. Martín García 200, CABA</p> 
-            </section>
+    <footer class="contenedor">
+        <section id="direccion">
+            <h4>Donde estamos?</h4>
+            <p>Av. Martín García 200, CABA</p> 
         </section>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href=".nosotros.html">Nosotros</a></li>
+                <li><a href=".contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
         <section>
             <h2>Hacemos de tu casa, <br> un Hogar</h2>
         </section>
         <section class="redes">
             <div>
                 <img src="../assets/iconoInstagram.svg" alt="Instagram">
-                <p>Seguinos !</p> 
+                <p>Seguinos!</p>
             </div>
             <div>
-                <a href="../vistas/contacto.html"><img id="contacto" src="../assets/contacto.svg" alt="Contacto"></a>
+                <a href="contacto.html"><img id="contacto" src="../assets/contacto.svg" alt="Contacto"></a>
                 <p>Contactanos</p>
             </div>
         </section>
