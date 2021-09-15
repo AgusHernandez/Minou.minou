@@ -928,15 +928,18 @@ footer nav ul li a {
     }
         
     .compra div img {
-        width: 250px;
+        width: 290px;
         height: 300px;
     }
         
     .compra #item {
+        justify-content: start;
         font-size: 2rem;
+        padding: 20px;
     }
-        
+
     .compra article form {
+        align-items: center;
         width: 60rem;
     }
         
