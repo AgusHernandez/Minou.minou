@@ -97,6 +97,10 @@ a {
 
 /* CONTACTO */
 
+.contacto {
+    height: 70rem;
+}
+
 .botonForm {
     background-color: #CDA292;
     border-radius: 44px;
@@ -105,105 +109,50 @@ a {
 
 /* CARRITO */
 
-.card-img-top {
+.border-img {
     border-radius: 19px;
-    width:max-content;
-    height: max-content;
 }
 
-.articuloCarrito {
-    gap: 5rem;
-}
-
-.form-align {
-    justify-self: center;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-}
-
-.form-select {
-    border-radius: 14px;
-    height: 40px;
-    width: 88px;
-}
-
-.form-control {
-    border-radius: 14px;
-    height: 40px;
-    width: 85px;
-}
-
-/*.compra {
-    display: grid;
-    grid-template-columns: 0fr 0.5fr;
-    grid-template-rows: 0fr 0.5fr 0fr;
-    align-items: center;
+.position {
+    display: flex;
     align-content: center;
     justify-content: center;
-    height: 650px;
-}*/
+}
 
-/*.compra div {
-    justify-self: center;
-    align-self: center;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}*/
-
-/*.compra #item {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-weight: 300;
-    line-height: 3;
-}*/
-
-/*.compra article form {
-    display: flex;
-    justify-content: space-around;
-    gap: 15px;
-    width: 70rem;
-    padding: 20px;
-}*/
-
-/*.compra .form-label {
-    font-size: 1.8rem;
-}*/
-
-/*.form-select{
-    font-size: 1.4rem;
+.casillero {
     border-radius: 14px;
     height: 40px;
-    width: 88px;
-}*/
+    width: 110px;
+}
 
-/*.form-control {
-    font-size: 1.5rem;
-    border-radius: 14px;
-}*/
+.carrito {
+    margin-right: 0;
+    margin-left: 0;
+}
 
-/*#botones {
-    justify-content:center;
-    align-items: center;
-}*/
-
-/*.botonCarrito {
-    text-decoration: none;
-    font-size: 1.5rem;
-    width: 20rem;
-    height: 5rem;
-    font-weight: 400;
+.botonCarrito {
     background-color: #CDA292;
     border-radius: 44px;
-    margin: 6rem;
-}*/
-
-/*.botonCarrito a {
+    color: white;
     font-size: 1.5rem;
+    transition: all 1s;
+}
+
+.botonCarrito:hover {
+    width: 30rem;
+    transform: scale(1.1);
+    background-color: #BF846F;
+}
+
+.linkBoton {
     text-decoration: none;
-}*/
+    color: white;
+    font-size: 1.5rem;
+}
+
+.gap {
+    row-gap: 5rem;
+}
 
 /* FOOTER */
 
@@ -232,4 +181,33 @@ a {
         padding-right: 0;
     }
     
+}
+
+@media screen and (min-width: 768px) {
+
+    .carrito {
+        height: 50rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .botonCarrito {
+        width: 30rem;
+    }
+
+    .botonesCarrito {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    .carrito {
+        height: 60rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }

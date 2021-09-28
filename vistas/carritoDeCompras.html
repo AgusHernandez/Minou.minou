@@ -36,46 +36,49 @@
         </nav>
     </header>
     <main>
-        <section class="container-md">
+        <section class="container-lg">
             <h2 class="display-4 m-5 text-center">CARRITO DE COMPRAS</h2>
-            <section class="row justify-content-center mt-5 articuloCarrito">
-                <article class="col-lg-3 col-md-6 col-sm-4 w-30">
-                    <div>
-                        <img class="card-img-top" src="../assets/taza.jpg" alt="taza">
+            <section class="row align-items-center justify-content-center mt-5 carrito">
+                <article class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="text-center">
+                        <img class="img-fluid border-img" src="../assets/taza.jpg" alt="taza">
                     </div>
                 </article>
-                <article class="col-lg-3 col-md-6 col-sm-4 justify-content-center w-50">
-                    <div class="align-content-center">
+                <article class="col-lg-6 col-md-6 col-sm-3 mb-5">
+                    <div>
                         <h4 class="display-6 m-5 text-center">Taza</h4>
                         <p class="text-center m-5 fs-3 lh-base">$ 900</p>
                     </div>
-                    <div class="align-content-center">
+                    <div class="text-center">
                         <form action="#" method="#">
-                            <div class="mb-3">
-                                <label class="form-label fs-4" for="cantidad">Cantidad:</label>
-                                <select class="form-select fs-4" name="cantidad" id="cantidad">
+                            <div class="row mb-3 position">
+                                <label class="fs-4" for="cantidad">Cantidad:</label>
+                                <select class="form-select fs-4 text-center w-sm-100 position casillero" name="cantidad" id="cantidad">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                 </select>
                             </div>
-                            <div class="mb-3">
+                            <div class="row mb-3 position">
                                 <label class="form-label fs-4" for="color">Color:</label>
-                                <select class="form-select fs-4" name="color" id="color">
+                                <select class="form-select fs-4 text-center w-sm-100 position casillero" name="color" id="color">
                                     <option value="gris">Gris</option>
                                     <option value="amarillo">Amarillo</option>
                                     <option value="azul">Azul</option>
                                 </select>
                             </div>
-                            <div class="mb-3">
+                            <div class="row mb-3 position">
                                 <label class="form-label fs-4" for="codigoPostal">Codigo Postal:</label>
-                                <textarea class="form-control fs-4" rows="2" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
+                                <textarea class="form-control fs-4 text-center w-sm-100 position casillero" rows="1" name="codigoPostal" id="codigoPostal" cols="10" rows="0"></textarea>
                             </div>
                         </form>
                     </div>
-                    <div id="botones">
-                        <a href="productos.html"> <input class="botonCarrito" type="reset" value="Seguir comprando"></a>
-                        <input class="botonCarrito" type="submit" value="Compra">
+                </article>
+                <article class="col-lg-6 col-md-6 col-sm-3">
+                        <div class="botonesCarrito text-center">
+                            <a class="btn botonCarrito btn-lg m-3 linkBoton" href="productos.html">Seguir comprando</a>
+                            <button type="button" class="btn botonCarrito btn-lg m-3">Comprar</button>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -84,13 +87,13 @@
     <footer>
         <section class="container-lg piePag text-light mt-5">
             <article class="row row-cols-3 align-items-center justify-content-center">
-                <article class="col-lg-3 col-md-3 col-sm-4 contColumnaFoot">
+                <article class="col-lg-3 col-md-3 col-sm-4">
                     <div class="container align-items-center">
                         <h4 class="f-4">¿Donde estamos?</h4>
                         <p class="f-3">Av. Martín García 200, CABA</p>
                     </div>
                 </article>
-                <article class="col-lg-3 col-md-6 col-sm-4 contColumnaFoot">
+                <article class="col-lg-3 col-md-6 col-sm-4">
                     <nav class="navbar navbar-dark justify-content-center align-self-center m-5">
                         <ul class="navbar-nav align-items-center">
                             <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
