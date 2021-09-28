@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* MENU */
+
+.navbarFondo {
+    background-image: linear-gradient(to right, #BF846F, #8C5346);
+    padding: 1.5rem;
+}
+
+.navbar-brand {
+    font-weight: 400;   
+    font-size: 3rem;
+}
+
+header ul li:hover {
+    transform: scale(1.1);
+}
+
+li a:hover {
+    text-decoration: overline solid #EAE6DA;
+    transform: scale(1,1);
+}
+
+a {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+/* PRODUCTOS */
+
+.cardsProductos {
+    gap: 8rem;
+}
+
+.cardProducto {
+    padding: 0rem;
+    transition: all 1s;
+}
+.cardProducto:hover {
+    box-shadow: 10px 10px 8px 2px rgba(184,175,184,1);
+    transform: scale(1,1);
+}
+
+.cardFondo {
+    background-color: #D9C0BA;
+}
+
+.boton {
+    background-color: #CDA292;
+    border-radius: 44px;
+    transition: all 1s;
+}
+
+.boton:hover {
+    width: 35rem;
+    transform: scale(1.1);
+    background-color: #BF846F;
+}
+
+.textBoton {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+/* INFO UTIL INDEX */
+
+.anchoInfo {
+    margin-top: 10rem;
+}
+
+.cardsInfo {
+    gap: 5rem;
+}
+
+.cardInfo {
+    border: none;
+    background-color: transparent;
+}
+
+/* NOSOTROS */
+
+.cardEquipo {
+    border: none;
+}
+
+.imgEquipo {
+    border-radius: 19px;
+}
+
+/* CONTACTO */
+
+.botonForm {
+    background-color: #CDA292;
+    border-radius: 44px;
+    color: white;
+}
+
+/* CARRITO */
+
+.card-img-top {
+    border-radius: 19px;
+    width:max-content;
+    height: max-content;
+}
+
+.articuloCarrito {
+    gap: 5rem;
+}
+
+.form-align {
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.form-select {
+    border-radius: 14px;
+    height: 40px;
+    width: 88px;
+}
+
+.form-control {
+    border-radius: 14px;
+    height: 40px;
+    width: 85px;
+}
+
+/*.compra {
+    display: grid;
+    grid-template-columns: 0fr 0.5fr;
+    grid-template-rows: 0fr 0.5fr 0fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 650px;
+}*/
+
+/*.compra div {
+    justify-self: center;
+    align-self: center;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}*/
+
+/*.compra #item {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 3;
+}*/
+
+/*.compra article form {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    width: 70rem;
+    padding: 20px;
+}*/
+
+/*.compra .form-label {
+    font-size: 1.8rem;
+}*/
+
+/*.form-select{
+    font-size: 1.4rem;
+    border-radius: 14px;
+    height: 40px;
+    width: 88px;
+}*/
+
+/*.form-control {
+    font-size: 1.5rem;
+    border-radius: 14px;
+}*/
+
+/*#botones {
+    justify-content:center;
+    align-items: center;
+}*/
+
+/*.botonCarrito {
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 20rem;
+    height: 5rem;
+    font-weight: 400;
+    background-color: #CDA292;
+    border-radius: 44px;
+    margin: 6rem;
+}*/
+
+/*.botonCarrito a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}*/
+
+/* FOOTER */
+
+.piePag {
+    background-image: linear-gradient(to right, #BF846F, #8C5346);
+}
+
+.contRedes {
+    gap: 2rem;
+    background-color: transparent;
+    border: none;
+}
+
+.redes {
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+/* MEDIA QUERIE */
+
+@media screen and (min-width: 320px) {
+
+    .container-lg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}
