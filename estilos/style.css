@@ -38,8 +38,11 @@ a {
     transition: all 0.5s;
 }
 
+header ul li:hover {
+    transform: scale(1.1);
+}
+
 li a:hover {
-    font-size: 2.1rem;
     text-decoration: overline solid #EAE6DA;
     transform: scale(1,1);
 }
