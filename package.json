@@ -18,7 +18,8 @@
     "url": "https://github.com/AgusHernandez/Minou.minou---HERNANDEZ/issues"
   },
   "homepage": "https://github.com/AgusHernandez/Minou.minou---HERNANDEZ#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.13"
   }
