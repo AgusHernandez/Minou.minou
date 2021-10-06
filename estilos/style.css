@@ -32,6 +32,10 @@ body {
   font-size: 1.8rem; }
 
 /* PRODUCTOS */
+.row {
+  margin-right: .5rem;
+  margin-left: .5rem; }
+
 .cardsProductos {
   gap: 8rem; }
   .cardsProductos .cardProducto {
@@ -40,8 +44,8 @@ body {
     .cardsProductos .cardProducto:hover {
       box-shadow: 10px 10px 8px 2px #b8afb8;
       transform: scale(1, 1); }
-    .cardsProductos .cardProducto .cardFondo {
-      background-color: #D9C0BA; }
+  .cardsProductos .cardFondo {
+    background-color: #D9C0BA; }
 
 .boton {
   background-color: #CDA292;
@@ -93,8 +97,6 @@ body {
     margin-right: 1rem; }
   .contacto .form-check-label {
     font-size: 1.5rem; }
-  .contacto .margin {
-    margin-right: 3rem; }
   .contacto .botonForm {
     background-color: #CDA292;
     border-radius: 44px;
