@@ -1,0 +1,154 @@
+@import "../utilities/mediaQueries";
+
+/* PRODUCTOS */
+
+.cardsProductos {
+    gap: 8rem;
+    .cardProducto {
+        padding: 0rem;
+        transition: all 1s;
+            &:hover {
+                box-shadow: 10px 10px 8px 2px rgba(184,175,184,1);
+                transform: scale(1,1);
+            }
+        .cardFondo {
+            background-color: #D9C0BA;
+        }
+    }
+}
+
+.boton {
+    background-color: #CDA292;
+    border-radius: 44px;
+    transition: all 1s;
+    color: white;
+    &:hover {
+        width: 35rem;
+        transform: scale(1.1);
+        background-color: #BF846F;
+    }
+}
+
+.textBoton {
+    color: white;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+/* INFO UTIL INDEX */
+
+.anchoInfo {
+    margin-top: 10rem;
+    .cardsInfo {
+        gap: 5rem;
+        .cardInfo {
+            border: none;
+            background-color: transparent;
+        }
+    }
+}
+
+/* NOSOTROS */
+
+.mt {
+    margin-top: 8rem;
+}
+
+.cardsEquipo {
+    gap: 8rem;
+    .cardEquipo {
+        border: none;
+        .imgEquipo {
+            border-radius: 19px;
+        }
+    }
+}
+
+/* CONTACTO */
+
+.contacto {
+    height: 70rem;
+    .form-label {
+        font-size: 1.5rem;
+    }
+    .form-control {
+        font-size: 1.2rem; 
+    }
+    .form-select {
+        font-size: 1.2rem;
+    }
+    .form-check-input {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 1rem;
+    }
+    .form-check-label {
+        font-size: 1.5rem;
+    }
+    .margin {
+        margin-right: 3rem;
+    }
+    .botonForm {
+        background-color: #CDA292;
+        border-radius: 44px;
+        color: white;
+    }
+    .btn-lg {
+        font-size: 1.5rem;
+    }
+}
+
+/* CARRITO */
+
+.carrito {
+    margin-right: 0;
+    margin-left: 0;
+        @include tablet {
+            height: 50rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @include desktop {
+            height: 60rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    .border-img {
+        border-radius: 19px;
+    }
+    .position {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .casillero {
+        border-radius: 14px;
+        height: 40px;
+        width: 110px;
+    }
+    .botonesCarrito {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .botonCarrito {
+        background-color: #CDA292;
+        border-radius: 44px;
+        color: white;
+        font-size: 1.5rem;
+        transition: all 1s;
+        @include tablet {
+            width: 30rem;
+        }
+        &:hover {
+            transform: scale(1.1);
+            background-color: #BF846F;
+        }
+    }
+    .linkBoton {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+}
